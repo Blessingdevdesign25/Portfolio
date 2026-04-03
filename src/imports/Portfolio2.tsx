@@ -13,6 +13,7 @@ import imgEstateHub from "figma:asset/82ec13b56c048a66e5f809c082a4436e30e0cb74.p
 import imgImage66 from "figma:asset/93125110bedb218f552cfcf8e9230ca887aa94ea.png";
 import imgClipnote from "figma:asset/ea31e914f961036d6f6c80a013a6d013dcf1dca7.png";
 import { imgGroup } from "./svg-whkhs";
+import cvFile from "../assets/Blessing Aleonomoh Frontend Engineering CV.pdf";
 
 function SocialLinks() {
   return (
@@ -48,8 +49,8 @@ function SocialLinks() {
 
 function ButtonWrapper() {
   return (
-    <div className="content-stretch flex gap-[10px] items-start py-[24px] relative shrink-0" data-name="Button Wrapper">
-      <div className="content-stretch flex gap-[6px] items-center justify-center p-[16px] relative rounded-[99999px] shrink-0 hover:bg-white/10 transition-colors cursor-pointer" data-name="Button">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[16px] items-start py-[24px] relative shrink-0" data-name="Button Wrapper">
+      <a href={cvFile} download className="content-stretch flex gap-[6px] items-center justify-center p-[16px] relative rounded-[99999px] shrink-0 hover:bg-white/10 transition-colors cursor-pointer" data-name="Button">
         <div aria-hidden="true" className="absolute border border-white border-solid inset-0 pointer-events-none rounded-[99999px]" />
         <div className="overflow-clip relative shrink-0 size-[20px]" data-name="download">
           <div className="absolute inset-[12.5%]" data-name="Icon">
@@ -63,7 +64,7 @@ function ButtonWrapper() {
         <div className="content-stretch flex items-center relative shrink-0" data-name="Text Component">
           <p className="font-['Poppins:Regular',sans-serif] leading-[1.4] not-italic relative shrink-0 text-white text-[16px] whitespace-nowrap">Download Resume</p>
         </div>
-      </div>
+      </a>
       <SocialLinks />
     </div>
   );
@@ -71,7 +72,7 @@ function ButtonWrapper() {
 
 function Hero() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-[600px]" data-name="hero">
+    <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-full lg:w-[600px]" data-name="hero">
       <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Text Component2">
         <div className="flex-[1_0_0] font-['Poppins:Bold',sans-serif] leading-[0] min-h-px min-w-px not-italic relative text-white text-[0px] whitespace-pre-wrap">
           <p className="font-['Poppins:Regular',sans-serif] leading-[1.4] mb-0 text-[24px]">I’m Blessing Kadiri,</p>
@@ -93,7 +94,7 @@ function Hero() {
 
 function SectionContentContainer() {
   return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-[1120px]" data-name="Section Content Container">
+    <div className="content-stretch flex flex-col lg:flex-row items-center justify-between relative shrink-0 w-full max-w-[1120px] gap-12 lg:gap-0" data-name="Section Content Container">
       <div className="absolute left-[-14px] size-[80px] top-[-80px]" data-name="Vector">
         <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80 80">
           <path clipRule="evenodd" d={svgPaths.p481bd00} fill="var(--fill-0, #016353)" fillRule="evenodd" id="Vector" />
@@ -381,21 +382,21 @@ function Group5() {
 
 function ButtonWrapper1() {
   return (
-    <div className="content-stretch flex gap-[20px] items-center relative shrink-0" data-name="button wrapper">
-      <a href="https://github.com/Blessingdevdesign25/" target="_blank" rel="noreferrer" className="bg-[#02f8cf] content-stretch flex gap-[6px] items-center justify-center p-[16px] relative rounded-[99999px] shrink-0 hover:bg-[#02f8cf]/80 transition-colors" data-name="Button2">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[20px] items-center relative shrink-0" data-name="button wrapper">
+      <a href="https://github.com/Blessingdevdesign25/" target="_blank" rel="noreferrer" className="bg-[#02f8cf] content-stretch flex gap-[6px] items-center justify-center p-[16px] relative rounded-[99999px] shrink-0 hover:bg-[#02f8cf]/80 transition-colors w-full sm:w-auto" data-name="Button2">
         <p className="font-['Poppins:Regular',sans-serif] leading-[1.4] not-italic relative shrink-0 text-[#333] text-[16px] whitespace-nowrap">VIEW WORKS</p>
       </a>
-      <div className="content-stretch flex gap-[6px] items-center justify-center p-[16px] relative rounded-[99999px] shrink-0" data-name="Button2">
+      <a href={cvFile} download className="content-stretch flex gap-[6px] items-center justify-center p-[16px] relative rounded-[99999px] shrink-0 hover:bg-black/5 transition-colors w-full sm:w-auto" data-name="Button2">
         <div aria-hidden="true" className="absolute border border-[#121622] border-solid inset-0 pointer-events-none rounded-[99999px]" />
         <p className="font-['Poppins:Regular',sans-serif] leading-[1.4] not-italic relative shrink-0 text-[#121622] text-[16px] whitespace-nowrap">DOWNLOAD CV</p>
-      </div>
+      </a>
     </div>
   );
 }
 
 function AboutContent() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-[635px]" data-name="about content">
+    <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-full lg:w-[635px]" data-name="about content">
       <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Text Component2">
         <div className="flex-[1_0_0] font-['Poppins:Regular',sans-serif] leading-[0] min-h-px min-w-px not-italic relative text-[#666] text-[16px] whitespace-pre-wrap">
           <p className="leading-[1.4] mb-0">I’m a frontend engineer focused on building scalable, user-centered web applications with React and modern JavaScript.</p>
@@ -416,7 +417,7 @@ function AboutContent() {
 
 function AboutHero() {
   return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-[1120px]" data-name="about hero">
+    <div className="content-stretch flex flex-col lg:flex-row items-center justify-between relative shrink-0 w-full max-w-[1120px] gap-12 lg:gap-0" data-name="about hero">
       <Group5 />
       <AboutContent />
     </div>
@@ -535,25 +536,25 @@ function Title3() {
 function Projects() {
   return (
     <div className="content-start flex flex-wrap gap-[24px] items-start justify-center relative shrink-0 w-full max-w-[1120px] mx-auto" data-name="Projects">
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[548px]" data-name="Case study">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[548px]" data-name="Case study">
         <div className="aspect-[4096/3072] relative rounded-[24px] shrink-0 w-full" data-name="image 57">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgImage57} />
         </div>
         <Title />
       </div>
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[548px]" data-name="Case study">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[548px]" data-name="Case study">
         <div className="aspect-[4096/3072] relative rounded-[24px] shrink-0 w-full" data-name="image 57">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgImage58} />
         </div>
         <Title1 />
       </div>
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[548px]" data-name="Case study">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[548px]" data-name="Case study">
         <div className="aspect-[4096/3072] relative rounded-[24px] shrink-0 w-full" data-name="image 57">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgNeighborColors} />
         </div>
         <Title2 />
       </div>
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[548px]" data-name="Case study">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[548px]" data-name="Case study">
         <div className="aspect-[4096/3072] relative rounded-[24px] shrink-0 w-full" data-name="image 57">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgEstateHub} />
         </div>
@@ -595,9 +596,9 @@ function LiveProjectContent() {
         <p className="font-['Poppins:Medium',sans-serif] leading-[1.4] not-italic relative shrink-0 text-[#2b2f3b] text-[33px] whitespace-nowrap">Live Project</p>
       </div>
       <div className="content-start flex flex-wrap gap-[24px] justify-center relative shrink-0 w-full max-w-[1120px] mx-auto" data-name="Project">
-        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full max-w-[1120px]" data-name="Live project">
-          <div className="relative rounded-[24px] shrink-0 w-full h-[500px] overflow-hidden" data-name="clipnote image">
-            <img alt="" className="absolute top-0 left-0 w-full object-cover object-top pointer-events-none rounded-[24px]" src={imgClipnote} />
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Live project">
+          <div className="relative rounded-[24px] shrink-0 w-full h-[300px] md:h-[500px] overflow-hidden" data-name="clipnote image">
+            <img alt="" className="absolute top-0 left-0 w-full h-full object-cover object-top pointer-events-none rounded-[24px]" src={imgClipnote} />
           </div>
           <LiveProjectTitle />
         </div>
@@ -608,7 +609,7 @@ function LiveProjectContent() {
 
 function LiveProject() {
   return (
-    <div id="projects" className="bg-white content-stretch flex flex-col items-center overflow-clip p-[80px] relative shrink-0 w-full" data-name="Live Project">
+    <div id="projects" className="bg-white content-stretch flex flex-col items-center overflow-clip px-6 md:px-20 py-[80px] relative shrink-0 w-full" data-name="Live Project">
       <LiveProjectContent />
     </div>
   );
@@ -627,7 +628,7 @@ function CaseStudyContent() {
 
 function FeaturedProjects() {
   return (
-    <div id="case-study" className="bg-white content-stretch flex flex-col items-center overflow-clip p-[80px] relative shrink-0 w-full" data-name="Featured Projects">
+    <div id="case-study" className="bg-white content-stretch flex flex-col items-center overflow-clip px-6 md:px-20 py-[80px] relative shrink-0 w-full" data-name="Featured Projects">
       <CaseStudyContent />
     </div>
   );
@@ -687,13 +688,13 @@ function Title5() {
 function Projects1() {
   return (
     <div className="content-start flex flex-wrap gap-[24px] items-start justify-center relative shrink-0 w-full max-w-[1120px] mx-auto" data-name="Projects">
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[548px]" data-name="Case study">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[548px]" data-name="Case study">
         <div className="aspect-[4096/3072] relative rounded-[24px] shrink-0 w-full" data-name="image 57">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgImage66} />
         </div>
         <Title5 />
       </div>
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[548px]" data-name="Case study">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[548px]" data-name="Case study">
         <div className="aspect-[4096/3072] relative rounded-[24px] shrink-0 w-full" data-name="image 57">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgImage59} />
         </div>
@@ -716,7 +717,7 @@ function CaseStudyContent1() {
 
 function CaseStudy() {
   return (
-    <div className="bg-white content-stretch flex flex-col items-center overflow-clip p-[80px] relative shrink-0 w-full" data-name="Case study">
+    <div className="bg-white content-stretch flex flex-col items-center overflow-clip px-6 md:px-20 py-[80px] relative shrink-0 w-full" data-name="Case study">
       <CaseStudyContent1 />
     </div>
   );
@@ -1158,7 +1159,7 @@ function CardWrapper() {
 function WhatFeatures() {
   return (
     <div className="relative shrink-0 w-full" data-name="what features">
-      <div className="content-stretch flex flex-col gap-[40px] items-start pb-[80px] pt-[40px] px-[80px] relative w-full">
+      <div className="content-stretch flex flex-col gap-[40px] items-start pb-[80px] pt-[40px] px-6 md:px-20 relative w-full">
         <Features />
         <CardWrapper />
       </div>
@@ -1195,14 +1196,14 @@ function SectioWrapper() {
 function Footer() {
   return (
     <footer className="bg-[#101e32] relative shrink-0 w-full" data-name="Footer">
-      <div className="content-stretch flex flex-col items-center gap-[40px] px-[80px] py-[60px] relative w-full">
+      <div className="content-stretch flex flex-col items-center text-center gap-[40px] px-6 md:px-20 py-[60px] relative w-full">
         {/* Brand Name */}
         <div className="content-stretch flex items-center relative shrink-0">
-          <h2 className="font-['Poppins:SemiBold',sans-serif] leading-[1.4] not-italic relative shrink-0 text-white text-[28px] whitespace-nowrap">Blessing Kadiri</h2>
+          <h2 className="font-['Poppins:SemiBold',sans-serif] leading-[1.4] not-italic relative shrink-0 text-white text-[28px]">Blessing Kadiri</h2>
         </div>
         
         {/* Social Icons */}
-        <div className="content-start flex gap-[20px] items-center relative shrink-0">
+        <div className="content-start flex flex-wrap justify-center gap-[20px] items-center relative shrink-0">
           <a 
             href="https://www.linkedin.com/in/blessing-o-kadiri" 
             target="_blank" 
@@ -1246,7 +1247,7 @@ function Footer() {
           </a>
           
           <a 
-            href="mailto:blessing.kadiri@example.com" 
+            href="mailto:blessingkadiri21@gmail.com" 
             className="bg-white relative rounded-full shrink-0 size-[48px] flex items-center justify-center hover:bg-[#02F8CF] transition-colors duration-300"
             aria-label="Email"
           >
@@ -1271,7 +1272,7 @@ function Footer() {
         
         {/* Copyright */}
         <div className="content-stretch flex items-center relative shrink-0">
-          <p className="font-['Poppins:Regular',sans-serif] leading-[1.4] not-italic relative shrink-0 text-white/70 text-[14px] whitespace-nowrap">
+          <p className="font-['Poppins:Regular',sans-serif] leading-[1.4] not-italic relative shrink-0 text-white/70 text-[14px]">
             Copyright © Blessing Kadiri
           </p>
         </div>

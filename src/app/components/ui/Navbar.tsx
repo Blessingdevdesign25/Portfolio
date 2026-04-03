@@ -3,8 +3,8 @@ import imgImage1 from "figma:asset/1aa0ad57739dff34e69790bf305718039bcc09dd.png"
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#101e32]/80 border-b border-white/10 shadow-lg">
-      <div className="max-w-[1280px] mx-auto px-[80px] py-[16px] flex items-center justify-between">
+    <nav className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#101e32]/90 border-b border-white/10 shadow-lg">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-20 py-4 flex items-center justify-between">
         
         {/* Profile Image / Logo */}
         <div className="h-[60px] w-[60px] relative rounded-full shrink-0 overflow-hidden border border-[#02f8cf]/30 ring-2 ring-[#02f8cf]/10">
