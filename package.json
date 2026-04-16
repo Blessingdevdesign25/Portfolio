@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "cmd /c \"cd dist && git init && git add . && git commit -m Deploy && git push -f https://github.com/Blessingdevdesign25/Portfolio.git master:gh-pages\""
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -72,7 +74,8 @@
     "vite": "6.3.5"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0"
+    "@types/node": "^25.5.0",
+    "gh-pages": "^6.3.0"
   },
   "peerDependencies": {},
   "peerDependenciesMeta": {
