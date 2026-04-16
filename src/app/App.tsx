@@ -1,5 +1,5 @@
-import Portfolio from "../imports/Portfolio2";
+import MainPage from "./MainPage";
 
 export default function App() {
-  return <Portfolio />;
+  return <MainPage />;
 }
