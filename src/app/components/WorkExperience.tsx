@@ -24,10 +24,10 @@ const experiences = [
 
 export default function WorkExperience() {
   return (
-    <section className="px-6 md:px-20 py-32 bg-background border-t border-white/5">
+    <section className="px-4 sm:px-6 md:px-20 py-20 sm:py-32 bg-background border-t border-white/5">
       <div className="max-w-[1280px] mx-auto">
-        <div className="flex flex-col gap-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
+        <div className="flex flex-col gap-4 mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter">
             Experience
           </h2>
         </div>
@@ -40,7 +40,7 @@ export default function WorkExperience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group py-12 border-b border-white/5 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 items-start hover:bg-white/[0.02] transition-colors rounded-lg px-4 -mx-4 cursor-default"
+              className="group py-8 sm:py-12 border-b border-white/5 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 sm:gap-8 items-start hover:bg-white/[0.02] transition-colors rounded-lg px-2 sm:px-4 -mx-2 sm:-mx-4 cursor-default"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-4">

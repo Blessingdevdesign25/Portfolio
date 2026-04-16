@@ -5,24 +5,24 @@ import cvFile from "../../assets/Blessing_Amos-Aleonomoh_Resume.pdf";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-20 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 md:px-20 py-12 sm:py-20 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] -z-10 translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px] -z-10 -translate-x-1/2 translate-y-1/2" />
 
-      <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-12 items-center">
+      <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 sm:gap-12 items-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-4 sm:gap-6"
         >
           <div className="flex items-center gap-3">
-            <span className="w-12 h-[1px] bg-primary"></span>
-            <span className="text-primary font-medium tracking-widest uppercase text-sm">Blessing Kadiri</span>
+            <span className="w-8 sm:w-12 h-[1px] bg-primary"></span>
+            <span className="text-primary font-medium tracking-widest uppercase text-[10px] sm:text-sm">Blessing Kadiri</span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter">
             Product <br />
             Designer <span className="text-primary">&</span> <br />
             UX Engineer
