@@ -15,7 +15,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col gap-4 sm:gap-6"
+          className="flex flex-col gap-4 sm:gap-6 mt-20 sm:mt-0"
         >
           <div className="flex items-center gap-3">
             <span className="w-8 sm:w-12 h-[1px] bg-primary"></span>
