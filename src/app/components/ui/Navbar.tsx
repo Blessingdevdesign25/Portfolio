@@ -29,7 +29,7 @@ export default function Navbar() {
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-20 flex items-center justify-between">
         <a href="#" className="hover:opacity-80 transition-opacity flex items-center">
-          <img src={brandLogo} alt="Brand Logo" className="h-16 sm:h-20 md:h-24 w-auto object-contain object-left" />
+          <img src={brandLogo} alt="Brand Logo" className="h-10 sm:h-12 w-auto object-contain object-left" />
         </a>
 
         {/* Desktop Links */}
