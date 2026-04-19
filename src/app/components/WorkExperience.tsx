@@ -5,7 +5,7 @@ const experiences = [
   {
     role: "Product Designer & Frontend Engineer",
     company: "Clipnote",
-    period: "2025 — Present",
+    period: "2025",
     description: "Built an AI-powered video summarization platform using React architecture. Handled complex API integrations, state management, and user-centric design flows.",
   },
   {
